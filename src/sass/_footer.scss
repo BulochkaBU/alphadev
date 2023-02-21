@@ -1,0 +1,89 @@
+@use "./fonts" as *;
+@use "./colors" as *;
+.footer {
+  background-color: #000;
+  position: relative;
+  min-height: 30rem;
+
+  &__body {
+    position: absolute;
+    top: 16rem;
+    width: 100%;
+  }
+
+  &__navbar,
+  &__official-info {
+    font-family: $jetbrains-font;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: $light-grey-color;
+    cursor: pointer;
+
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    li {
+      list-style-type: none;
+      margin-bottom: 2rem;
+      &:hover {
+        color: $plum-color;
+      }
+    }
+  }
+  &__navbar {
+    text-transform: uppercase;
+    padding-left: 3rem;
+  }
+
+  &__social {
+    width: 11.375rem;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 2.25rem;
+      height: 2.25rem;
+      border: solid 3px $plum-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__wrapper-links {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    &__body {
+      top: 8rem;
+    }
+    .logo {
+      justify-content: center;
+    }
+    &__wrapper-links {
+      padding-top: 2.5rem;
+      justify-content: center;
+    }
+    &__social {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    &__body {
+      top: 3rem;
+    }
+    &__wrapper-links {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__navbar {
+      padding-left: 0;
+    }
+  }
+}

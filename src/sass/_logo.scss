@@ -1,0 +1,19 @@
+@use "./fonts" as *;
+@use "./colors" as *;
+
+.logo {
+  display: flex;
+  cursor: pointer;
+
+  &__wrapper {
+    padding-left: 1rem;
+    font-family: $ibm-font;
+    color: $light-grey-color;
+  }
+  &__header {
+    font-size: 1.625rem;
+  }
+  &__subheader {
+    font-size: 1rem;
+  }
+}

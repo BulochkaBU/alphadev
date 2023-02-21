@@ -1,0 +1,17 @@
+@use "./header";
+@use "./logo";
+@use "./ellipse";
+@use "./buttons";
+@use "./promo-event";
+@use "./speakers";
+@use "./footer";
+
+* {
+  a {
+    color: unset;
+    text-decoration: none;
+    &:hover {
+      color: unset;
+    }
+  }
+}

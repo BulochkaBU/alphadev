@@ -1,0 +1,15 @@
+.ellipse {
+  height: 45rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    35.25% 81.65% at 80.64% -9.36%,
+    #060606 33.06%,
+    rgba(99, 19, 200, 0.5) 76.26%
+  );
+  opacity: 0.4;
+  -webkit-filter: blur(12.5rem);
+  -moz-filter: blur(12.5rem);
+  -ms-filter: blur(12.5rem);
+  filter: blur(12.5rem);
+  position: relative;
+}

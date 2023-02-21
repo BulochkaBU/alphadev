@@ -1,0 +1,16 @@
+@use "./fonts" as *;
+@use "./colors" as *;
+.main-btn {
+  width: 10.375rem;
+  height: 3.187rem;
+  border: 3px solid #ffffff;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  font-family: $jetbrains-font;
+  background-color: unset;
+  &:hover {
+    background-color: $plum-color;
+  }
+}
